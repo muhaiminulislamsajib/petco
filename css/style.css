@@ -1,0 +1,643 @@
+*{
+  padding: 0; 
+  margin: 0;
+  box-sizing: border-box;
+}
+ul, ol{
+   list-style-type: none;
+}
+a{
+   text-decoration: none;
+}
+img{
+   vertical-align: middle;
+}
+
+/* All Common CSS */
+
+#navbar{
+   padding: 5px 0;
+   background: #ffffff;
+   position: fixed;
+   z-index: 9999;
+   width: 100%;
+}
+#navbar .button a{
+  text-decoration: none;
+  font-family: 'Titan One', cursive;
+  background: #e43a3a;
+  color: #ffffff;
+  padding: 10px 15px;
+}
+.navshape{
+ position: absolute;
+ top: 75px;
+ left: -70px;
+ z-index: 999;
+}
+.navshape img{
+  width: 100%;
+}
+.menu_item ul{
+   display: flex;
+   justify-content: space-between;
+}
+#navbarSupportedContent ul li{
+   font-family: 'Titan One', cursive;
+   padding: 2px 15px;
+   margin: 5px;
+}
+#navbarSupportedContent ul li:hover{
+ background: #e43a3a;
+ padding: 2px 15px;
+ margin: 5px;
+ transition: .5s;
+}
+
+#cover{
+ position: relative;
+}
+.cover-item img{
+ width: 100%;
+ z-index: -1;
+}
+.cover-text{
+ position: absolute;
+ top: 150px;
+ left: 100px;
+}
+.cover-text h2{
+font-size: 50px;
+font-weight: 600;
+font-family: 'Titan One', cursive;
+color: #ffffff;
+}
+.cover-text h2 span{
+ background: url(../images/banner_text_shape.png);
+ background-position: center;
+ padding: 5px 10px;
+ display: inline-flex;
+ border-radius:15%;
+}
+.cover-text p {
+ font-family: 'Titan One', cursive;
+ margin: 30px 0;
+ color: #ffffff;
+ width: 500px;
+}
+
+.cover-text .button a{
+ background: #e43a3a;
+ text-decoration: none;
+ font-family: 'Titan One', cursive;
+ font-size: 20px;
+ padding: 15px;
+ border-radius: 5px;
+ color: #ffffff;
+}
+/* coverpart */
+/* locationpart */
+#location{
+ padding: 50px 0;
+ position: relative;
+ background: url(../images/counter_bg.jpg);
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+#location .locationmain {
+	position: absolute;
+	top: -75px;
+	left: 10%;
+}
+#location .firstpart{
+ background: #020118;
+ display: flex;
+ padding: 50px 20px;
+ border-radius: 10px;
+}
+#location .firstpart i{
+ font-size: 40px;
+ color: #ffffff;
+ padding-right: 10px;
+}
+input[type=text] {
+ border: none;
+ background-color: #020118;
+ outline: 0;
+ font-size: 15px;
+ width: 200px;
+ height: 30px;
+}
+input[type=text]:focus {
+ border: none;
+ background-color:#020118;
+ outline: 0;
+ width: 200px;
+ height: 30px;
+}
+
+.center { 
+ height: 30px;
+ width: 200px; 
+ overflow: auto;
+ margin: auto; 
+ position: absolute;
+ top: 0; left: 0; bottom: 0; right: 0; 
+}
+.firstpart ::-moz-placeholder {
+ color: #ffffff;
+ font-family: 'Titan One', cursive;
+ font-size: 14px;
+}
+.locationmain .secondpart{
+ display: flex;
+ background: #e43a3a;
+ padding: 50px 20px;
+ border-right: 2px solid;
+ border-radius: 10px;
+}
+.locationmain .secondpart i{
+ font-size: 40px;
+ color: #ffffff;
+}
+.locationmain .secondpart p{
+ color: #ffffff;
+ font-family: 'Titan One', cursive;
+ font-size: 14px;
+ padding-left: 10px;
+}
+
+.locationmain .thirdpart{
+ display: flex;
+ background: #020118;
+ padding: 50px 20px;
+ border-radius: 10px;
+}
+.locationmain .thirdpart i{
+ font-size: 40px;
+ color: #ffffff;
+}
+.locationmain .thirdpart p{
+ color: #ffffff;
+ font-family: 'Titan One', cursive;
+ font-size: 14px;
+ padding-left: 10px;
+}
+
+#location .text_main{
+  padding-top: 120px;
+}
+#location .text_main h3{
+  color: #e43a3a;
+  font-family: 'Titan One', cursive;
+}
+#location .text_main h2{
+  color: #020118;
+  font-family: 'Titan One', cursive;
+  font-size: 40px;
+}
+#location .text_main .text_main_item{
+  width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+.countermain{
+  padding-top: 80px;
+}
+.countermain h3{
+  font-family: 'Titan One', cursive;
+  font-size: 20px;
+}
+.countermain h1{
+  font-family: 'Titan One', cursive;
+  font-size: 60px;
+}
+.col-lg-3 {
+  text-align: center;
+  padding: 30px;
+  border-right: 1px dashed black;
+  background: #ffffff;
+}
+
+.col-lg-3:last-child {
+  border-right: 0px solid black;
+}
+
+.counter {
+  animation-duration: 1s;
+  animation-delay: 0s;
+}
+
+/* locationpart */
+
+/* Adoption */
+#Adoption .text_part h2{
+  font-family: 'Titan One', cursive;
+  font-size: 40px;
+  padding-top: 100px;
+}
+#Adoption .text_part p{
+  font-family: 'Titan One', cursive;
+  padding-top: 30px;
+}
+#Adoption .text_part .button{
+  margin-top: 50px;
+}
+#Adoption .text_part .button a{
+  font-family: 'Titan One', cursive;
+  padding: 15px 20px;
+  background: #e43a3a;
+  text-decoration: none;
+  color: #ffffff;
+}
+#Adoption .image img{
+  width: 100%;
+}
+/* Adoption */
+
+/* service */
+#service {
+  padding: 80px 0;
+}
+#service .service-main-text{
+  text-align: center;
+}
+#service .service-main-text h3{
+  font-family: 'Titan One', cursive;
+  font-size: 20px;
+  color: #e43a3a;
+}
+#service .service-main-text h2{
+  font-family: 'Titan One', cursive;
+  font-size: 40px;
+  line-height: 50px;
+}
+#service .service-main-text p{
+  font-family: 'Titan One', cursive;
+}
+#service .service-slider{
+  padding-top: 100px;
+}
+#service .service-slider .slider-item{
+  position: relative;
+}
+#service .service-slider .slider-item img{
+  width: 100%;
+}
+#service .service-slider .slider-text p{
+  font-family: 'Titan One', cursive;
+  font-size: 20px;
+  color: #e43a3a;
+  background: #fff;
+  padding: 15px;
+  position: absolute;
+  top: 350px;
+  left: 12%;
+  cursor: pointer;
+}
+#service .next{
+  transform: rotate(180deg);
+  width: 50%;
+  position: relative;
+}
+#service .next img{
+  width: 15%;
+  position: absolute;
+  top: -200px;
+  left: 370px;
+}
+#service .service-text{
+  font-family: 'Titan One', cursive;
+  background: #e43a3a;
+  padding: 40px;
+  color: #fff;
+}
+#service .service-text h3{
+  font-size: 18px;
+}
+#service .service-text h2{
+  font-size: 35px;
+  padding: 10px 0;
+}
+#service .service-text .button{
+  padding-top: 30px;
+}
+#service .service-text .button a{
+  font-size: 20px;
+  padding: 10px 20px;
+  background: #fff;
+  color: #e43a3a;
+  text-decoration: none;
+  
+}
+/* service */
+/* faq */
+#faq{
+  padding: 100px;
+  background: #596464;
+}
+#faq .faq-main{
+  position: relative;
+}
+
+#faq .faq-main .faq_tv {
+  z-index: 999;
+}
+#faq .faq-main .faq_img {
+	position: absolute;
+	top: 177px;
+	left: 44px;
+}
+#faq .faq-text{
+  padding-bottom: 50px;
+}
+#faq .faq-text h2{
+  font-family: 'Titan One', cursive;
+  color: #e43a3a;
+  font-size: 25px;
+}
+#faq .faq-text h3{
+  font-family: 'Titan One', cursive;
+  color: #382c5d;
+  font-size: 35px;
+}
+#faq .faq-text p{
+  font-family: 'Titan One', cursive;
+  font-size: 16px;
+}
+
+#faq .faq-text{
+  padding-top: 150px;
+}
+#accordionFlushExample{
+  padding-top: 30px;
+}
+#accordionFlushExample .accordion-item{
+  margin-top: 10px;
+  border-radius: 5px;
+}
+/* faq */
+/* sponsor */
+#sponsor{
+  background: #000;
+  padding: 50px 0;
+}
+
+/* sponsor */
+
+/* meet */
+#meet{
+  padding: 100px 0;
+}
+#meet .upper-text{
+  font-family: 'Titan One', cursive;
+}
+#meet .upper-text h3{
+  font-family: 'Titan One', cursive;
+  color: #e43a3a;
+  font-size: 25px;
+}
+#meet .upper-text h2{
+  font-family: 'Titan One', cursive;
+  color: #382c5d;
+  font-size: 35px;
+  padding: 15px 0;
+}
+#meet .upper-text p{
+  font-family: 'Titan One', cursive;
+  font-size: 16px;
+}
+.home-shop{
+  padding: 50px 0;
+  position: relative;
+}
+.home-shop .shop-item img{
+  width: 100%;
+}
+.shop-item .text-item {
+	padding: 15px;
+	text-align: center;
+	background: #fff;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	width: 300px;
+	border-radius: 5px;
+	position: absolute;
+	top: 335px;
+	left: 41px;
+  height: 150px;
+}
+.shop-item .text-item h4{
+  font-family: 'Titan One', cursive;
+  color: #e43a3a;
+  font-size: 25px;
+}
+.home-shop .shop-item .text-item h5 {
+	font-size: 15px;
+	position: absolute;
+	top: 55px;
+	left: 10px;
+}
+.home-shop .shop-item .text-item span {
+	font-size: 15px;
+	position: absolute;
+	top: 55px;
+	left: 200px;
+}
+.home-shop .shop-item .text-item .review{
+	font-size: 15px;
+	position: absolute;
+	top: 110px;
+	left: 10px;
+  color: rgb(129, 129, 11);
+}
+.home-shop .shop-item .text-item h6{
+	font-size: 15px;
+	position: absolute;
+	top: 110px;
+	left: 180px;
+}
+.home-shop .shop-item .text-item::after{
+  content: "";
+	position: absolute;
+	top: 90px;
+	left: 25px;
+  height: 1px;
+  width: 250px;
+  background: #000;
+}
+.home-shop .shop-item .image {
+  position: relative;
+}
+.home-shop .shop-item .image .overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.498);
+  transform: scale(0);
+}
+.home-shop .shop-item .image:hover .overlay{
+  transform: scale(1);
+  transition: .5s;
+}
+.home-shop .shop-item .image .overlay a{
+  font-family: 'Titan One', cursive;
+  font-size: 20px;
+  padding: 10px 20px;
+  background: #fff;
+  color: #e43a3a;
+  text-decoration: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+}
+.home-shop .shop-item .image .overlay a:hover{
+  background: #382c5d;
+  color: #ffffff;
+}
+/* meet */
+/* testimonial */
+#testimonial{
+  background: url(../images/counter_bg.jpg);
+  padding: 100px 0;
+}
+
+#testimonial .upper-text h3{
+  font-family: 'Titan One', cursive;
+  color: #e43a3a;
+  font-size: 25px;
+}
+#testimonial .upper-text h2{
+  font-family: 'Titan One', cursive;
+  color: #382c5d;
+  font-size: 35px;
+  padding: 15px 0;
+}
+#testimonial .upper-text p{
+  font-family: 'Titan One', cursive;
+  font-size: 16px;
+}
+#testimonial .testimain .testi-item{
+  padding: 15px 30px;
+  background: #fff;
+  margin: 20px;
+}
+#testimonial .testimain .testi-item img{
+  width: 100%;
+  border-radius: 50%;
+  border: 7px solid #f4f1ea;
+}
+/* testimonial */
+/* news */
+#news{
+  padding: 50px 0;
+}
+#news .upper-text h3{
+  font-family: 'Titan One', cursive;
+  color: #e43a3a;
+  font-size: 25px;
+}
+#news .upper-text h2{
+  font-family: 'Titan One', cursive;
+  color: #382c5d;
+  font-size: 35px;
+  padding: 15px 0;
+}
+#news .upper-text p{
+  font-family: 'Titan One', cursive;
+  font-size: 16px;
+}
+
+#news .news-main{
+  padding: 50px 0;
+  position: relative;
+}
+#news .news-main .content{
+  position: relative;
+}
+#news .news-main .image img{
+  width: 100%;
+  transform: scale(1);
+}
+#news .news-main .image{
+  overflow: hidden;
+}
+#news .news-main img:hover{
+  width: 100%;
+  transform: scale(1.2);
+  transition: .5s;
+}
+#news .news-main .content .admin i{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+#news .news-main .content .admin p{
+  position: absolute;
+  top: 7px;
+  left: 30px;
+}
+#news .news-main .content .span{
+  position: absolute;
+  top: 7px;
+  left: 240px;
+}
+#news .news-main .content .span i{
+  margin-right: 5px;
+}
+#news .news-main .content2{
+  position: absolute;
+  top: 50px;
+}
+#news .news-main .content2 h2{
+  font-family: 'Titan One', cursive;
+  font-size: 25px;
+}
+#news .news-main .content2 p{
+  font-size: 20px;
+}
+#news .news-main .content2 a{
+  font-family: 'Titan One', cursive;
+  font-size: 16px;
+  padding: 10px 20px;
+  background: #0b1030;
+  color: #e43a3a;
+  text-decoration: none;
+}
+#news .news-main .image-button a{
+  font-family: 'Titan One', cursive;
+  font-size: 16px;
+  padding: 10px 20px;
+  background: #ffffff;
+  color: #e43a3a;
+  text-decoration: none;
+  position: absolute;
+  top: 250px;
+  left: 240px;
+}
+/* news */
+/* newslatter */
+#footer{
+  padding: 200px 0 0px 0;
+}
+#footer .content1 p{
+  padding: 20px 0;
+}
+#footer .content1 .social-icon i{
+  padding: 10px;
+}
+#footer .content1{
+  position: relative;
+}
+#footer .content1 ul{
+  position: absolute;
+  top: 60px;
+  left: 15px;
+}
+#footer .content1 img{
+  margin-top: 3px;
+}
+/* newslatter */
